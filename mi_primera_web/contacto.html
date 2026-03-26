@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imgs/Rhifords.ico" type="image/x-icon" />
+    <title>Contactanos | Rhifords</title>
+    <link rel="stylesheet" href="./css/contacto.css" />
+    <script
+      src="https://kit.fontawesome.com/b408879b64.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="./imgs/Rhifords.ico" alt="Icono_Rhifords"
+      /></a>
+      <h1>CONTÁCTATE CON NOSOTROS</h1>  
+    </div>
+
+    <div class="data">
+   
+      <p><i class="fa-solid fa-phone"></i> +54 1136923069</p>
+      <p><i class="fa-solid fa-envelope"></i> Rhifords@gmail.com</p>
+      <p>
+        <i class="fa-solid fa-location-dot"></i> Av. Espora 1490 Buenos Aires ,
+        ARGENTINA
+      </p>
+    </div>
+
+    <div class="form">
+      <h2>Trabaja con nosotros</h2>
+    </div>
+
+    <form
+      action="https://formspree.io/f/xqakbeew"
+      method="post"
+      target="_blank"
+    >
+      <label for="name">Nombre:</label>
+      <input type="text" name="name" id="name" placeholder="Ian Lucas" />
+
+      <label for="email">email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        placeholder="Rhifords@gmail.com"
+      />
+
+      <label for="number">Telefono:</label>
+      <input type="number" name="number" id="number" placeholder="1136923069" />
+
+      <label for="file">Ingresa tu cv:</label>
+      <input type="file" name="file" id="file" />
+
+      <label for="coms">Porque elijes a Rhifords:</label>
+      <textarea name="coms" id="coms"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
