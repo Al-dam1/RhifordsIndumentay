@@ -14,7 +14,12 @@
       type="image/x-icon" />
   </head>
   <body>
-      <nav>
+      <nav> <div class="wave-container">
+      <h1 class="wave-text">
+        <span>R</span><span>h</span><span>i</span><span>f</span><span>o</span><span>r</span><span>d</span><span>s</span>
+        <span>I</span><span>n</span><span>d</span><span>u</span><span>m</span><span>e</span><span>n</span><span>t</span><span>a</span><span>r</span><span>i</span><span>a</span>
+
+    </div>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="accesorios.html">Accesorios</a></li>
@@ -34,29 +39,39 @@
       <p>Nuevas tendencias 2026</p>
       </section>
       <div class="contenedor-central">
-         <aside>
-          <h2>Filtra por categorias</h2>
-          <ul>
-            <li><label><input type="checkbox">botas</label></li>
-            <li><label><input type="checkbox">remeras</label></li>
-            <li><label><input type="checkbox">pantalones</label></li>
-            <li><label><input type="checkbox">zapatillas<label></li>
-          </ul>
-          <h3>Talle</h3>
-            <ul>
-              <li><label><input type="checkbox">S</label></li>
-               <li><label><input type="checkbox">M</label></li>
-                <li><label><input type="checkbox">L</label></li>
-                 <li><label><input type="checkbox">XL</label></li> 
-            </ul>
+         <aside class="sidebar">
+          <div class="filtro-categorias categorias" >
+          <h4>Filtra por categorias</h4>
+            <label><input type="checkbox" value="botas">botas</label>
+            <label><input type="checkbox" value="remeras">remeras</label>
+            <label><input type="checkbox" value="pantalones">pantalones</label>
+            <label><input type="checkbox" value="zapatillas">zapatillas<label>
+          </div>
+          <div class="filtro-bloque">
+          <h4>Color</h4>
+          <div class="color">
+            <label><input type="radio" name="color" value="rojo">Rojo</label>
+            <label><input type="radio"  name="color" value="negro">negro</label>
+            <label><input type="radio" name="color" value="blanco">Blanco</label>
+            <label><input type="radio" name="color" value="rosa">Verde</label>
+          </div>
+          </div>
+          <div class="filtro-bloque">
+          <h4>Talle</h4>
+            <label><input type="checkbox" value="s">S</label>
+               <label><input type="checkbox" value="m">M</label>
+                <label><input type="checkbox" value="l">L</label>
+                 <label><input type="checkbox" value="xl">XL</label> 
+          </div>
+          <div class="filtro-bloque">
             <h3>Precio</h3>
-            <ul>
-              <li><label><input type="checkbox">Hasta $50.000</label></li>
-               <li><label><input type="checkbox">$50.000-100K</label></li>
-                <li><label><input type="checkbox">Mas de 100K</label></li>
-            </ul>
-          
-          
+              <label><input type="radio" value="0-15000">Hasta $15.000</label>
+              <label><input type="radio" value="15000-50000">Hasta $50.000</label>
+               <label><input type="radio" value="50000-100000">$50.000-100K</label>
+                <label><input type="radio" value="100000+">Mas de 100K</label>
+
+          </div>
+          <button class="limpiar">Limpiar Filtros</button>
         </aside>
         <main>
         <div class="top-bar">

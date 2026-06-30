@@ -16,6 +16,12 @@
  <body>
     <div class="contenedor-general">
       <nav>
+        <div class="wave-container">
+      <h1 class="wave-text">
+        <span>R</span><span>h</span><span>i</span><span>f</span><span>o</span><span>r</span><span>d</span><span>s</span>
+        <span>I</span><span>n</span><span>d</span><span>u</span><span>m</span><span>e</span><span>n</span><span>t</span><span>a</span><span>r</span><span>i</span><span>a</span>
+
+    </div>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="mujer.html">Mujer</a></li>
@@ -24,9 +30,9 @@
          <button class="ico-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#050505" class="icon icon-tabler icons-tabler-filled icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" /><path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" /></svg>
         </button>
         </li>
-        <li><button class="button-products">
+        <li>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#050505" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
-        </button>
+        
       </li>
         </ul>
       </nav>
@@ -35,27 +41,39 @@
       <p>Nuevas tendencias 2026</p>
       </section>
       <div class="contenedor-central">
-        <aside>
-          <h2>Filtra por categorias</h2>
-          <ul>
-            <li><label><input type="checkbox">botas</label></li>
-            <li><label><input type="checkbox">remeras</label></li>
-            <li><label><input type="checkbox">pantalones</label></li>
-            <li><label><input type="checkbox">zapatillas<label></li>
-          </ul>
-          <h3>Talle</h3>
-            <ul>
-              <li><label><input type="checkbox">S</label></li>
-               <li><label><input type="checkbox">M</label></li>
-                <li><label><input type="checkbox">L</label></li>
-                 <li><label><input type="checkbox">XL</label></li> 
-            </ul>
+        <aside class="sidebar">
+          <div class="filtro-categorias categorias" >
+          <h4>Filtra por categorias</h4>
+            <label><input type="checkbox" value="botas">gorras</label>
+            <label><input type="checkbox" value="remeras">mochilas</label>
+            <label><input type="checkbox" value="pantalones">medias</label>
+            <label><input type="checkbox" value="zapatillas">zapatillas<label>
+          </div>
+          <div class="filtro-bloque">
+          <h4>Color</h4>
+          <div class="color">
+            <label><input type="radio" name="color" value="rojo">Rojo</label>
+            <label><input type="radio"  name="color" value="negro">negro</label>
+            <label><input type="radio" name="color" value="blanco">Blanco</label>
+            <label><input type="radio" name="color" value="rosa">Verde</label>
+          </div>
+          </div>
+          <div class="filtro-bloque">
+          <h4>Talle</h4>
+            <label><input type="checkbox" value="s">S</label>
+               <label><input type="checkbox" value="m">M</label>
+                <label><input type="checkbox" value="l">L</label>
+                 <label><input type="checkbox" value="xl">XL</label> 
+          </div>
+          <div class="filtro-bloque">
             <h3>Precio</h3>
-            <ul>
-              <li><label><input type="checkbox">Hasta $50.000</label></li>
-               <li><label><input type="checkbox">$50.000-100K</label></li>
-                <li><label><input type="checkbox">Mas de 100K</label></li>
-            </ul>
+              <label><input type="radio" value="0-15000">Hasta $15.000</label>
+              <label><input type="radio" value="15000-50000">Hasta $50.000</label>
+               <label><input type="radio" value="50000-100000">$50.000-100K</label>
+                <label><input type="radio" value="100000+">Mas de 100K</label>
+
+          </div>
+          <button class="limpiar">Limpiar Filtros</button>
         </aside>
         <main>
         <div class="top-bar">

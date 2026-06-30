@@ -1,3 +1,18 @@
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".navbar");
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
+document.addEventListener("click", (e) => {
+  if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+    navMenu.classList.remove("active");
+  }
+});
+
+
+
 let imagenes = [
     {
         "url": "",
