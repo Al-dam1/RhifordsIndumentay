@@ -728,6 +728,7 @@ iframe {
 }
 /* celular */
 @media (max-width: 600px) {
+  body{overflow: hidden;}
   .menu-toggle { display: flex; }
   .navbar ul {
     display: none;
@@ -765,8 +766,8 @@ iframe {
     }
 
     .img-mobile img{
-        height: 250px;
-    width: 250px;
+        height: 150px;
+    width: 150px;
         border-radius: 8px;
         padding: 10px;
         border: none;
