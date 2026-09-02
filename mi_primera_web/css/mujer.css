@@ -33,12 +33,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to bottom,
-      #1edab1,
-      #00df9c,
-      #00e381,
-      #00e55d,
-      #09e726);
+  background-image: linear-gradient(
+    to bottom,
+    #1edab1,
+    #00df9c,
+    #00e381,
+    #00e55d,
+    #09e726
+  );
   padding: 10px 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   z-index: 1000;
@@ -103,8 +105,9 @@ nav ul button:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
   animation: wave 2s ease-in-out infinite;
-  text-shadow: 0 0 10px rgba(48, 149, 40, 0.8), 0 0 20px rgba(100, 206, 42, 0.6);
-
+  text-shadow:
+    0 0 10px rgba(48, 149, 40, 0.8),
+    0 0 20px rgba(100, 206, 42, 0.6);
 }
 /* Delay progresivo */
 .wave-text span:nth-child(1) {
@@ -185,7 +188,6 @@ nav ul button:hover {
 
 /* Efecto ondulado */
 @keyframes wave {
-
   0%,
   100% {
     transform: translateY(0);
@@ -207,6 +209,7 @@ nav ul button:hover {
 /* hero-section */
 .hero-categoria {
   align-items: center;
+  margin-top: 100px;
   padding: 20px 10px;
   background: linear-gradient(to right, #f5f5f5, #d38585);
   display: flex;
@@ -419,6 +422,9 @@ footer {
   display: flex;
   flex-direction: column;
 }
+.static-title {
+  display: none;
+}
 /* MEDIA QUERIES */
 @media (width < 1024px) {
   li {
@@ -430,27 +436,37 @@ footer {
   }
 }
 
-@media (width < 480px) {
-  ul {
-    flex-direction: column;
+@media screen and (max-width: 600px) {
+  .wave-container {
+    display: none;
   }
+  .static-title {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;align-items: center;
+    text-shadow: 1px 1px 3px rgba(168, 24, 24, 0.2) !important;
+  }
+  .static-title h1 {
+    font-size: 20px;
+  }
+  .static-title h1::first-letter {
+    font-size: 33px;
+    font-family: italic;
 
+    font-weight: 600;
+  }
+  .hero-categoria {
+    width: 100%;
+    height: auto;
+    margin-top: 65px;
+  }
   .contenedor-central {
-    flex-direction: column;
-  }
-
-  aside {
-    flex-basis: auto;
-    width: 100%;
-    border-right: none;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-  }
-
-  main {
+    display: flex;
     width: 100%;
   }
-
-  .contenedor-columnas {
-    grid-template-columns: 1fr;
+  .aside {
+    width: 10%;
   }
 }
