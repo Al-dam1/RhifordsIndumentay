@@ -86,7 +86,21 @@ nav ul button:hover {
   background-color: brown;
   color: white;
 }
-
+/*Menu hamburguesa*/
+.menu-togle{
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.menu-togle span{
+  width: 25px;
+  height: 3px;
+  background-color: rgb(163, 56, 56);
+  display: block;
+}
 .wave-container {
   display: flex;
   justify-content: center;
@@ -437,7 +451,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .wave-container{display: none;}
   .static-title{
     display: flex;
@@ -456,6 +470,25 @@ footer {
     font-size: 33px;
     font-family: italic;
   }
+  .menu-togle{display: flex;
+  justify-content: flex-end;}
+  nav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #008000;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+  }
+  nav li{border-top: 1px solid #000;}
+  nav a{
+    display: flex;
+    padding: 1rem;
+  }
+  nav{position:relative;}
+  nav.active{display: flex;}
   .hero-categoria{
     width: 100%;
     height: auto;
