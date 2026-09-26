@@ -151,18 +151,20 @@ button:hover {
     font-size: 17px;
   }
 
-  button {
-    margin-top: 8px;
-    color: black;
-    background-color: gray;
-    font-size: 16px;
-  }
-  button:hover {
-    color: rgb(6, 6, 4);
-    background-color: rgba(133, 122, 122, 0.464);
-  }
-}
 
+}
+.submit{  margin-top: 28px;
+  color: black;
+  background-color: gray;
+  font-size: 16px;
+  padding: 7px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.submit:hover {
+  color: rgb(6, 6, 4);
+  background-color: rgba(133, 122, 122, 0.464);
+}
 /* mobile */
 @media (max-width: 480px) {
   body {
@@ -222,13 +224,16 @@ button:hover {
     font-size: 17px;
   }
 
-  button {
+  .submit {
     margin-top: 8px;
     color: black;
     background-color: gray;
     font-size: 16px;
+    padding: 7px;
+    font-weight: bold;
+    letter-spacing: 3px;
   }
-  button:hover {
+  .submit:hover {
     color: rgb(6, 6, 4);
     background-color: rgba(133, 122, 122, 0.464);
   }

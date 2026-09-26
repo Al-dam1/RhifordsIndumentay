@@ -59,13 +59,20 @@ productos.forEach((producto)=>{
 });
 
 
-
+// escucho todos los eventos click el documento
 document.addEventListener('click',(event)=>{
+    // si el elemento donde se hizo click contiene la clase 'agregar'
    if (event.target.classList.contains('agregar')){
+    // busco el contenedor mas cercano que se un 'article
+    // obtengo el id del atributo data-id
     const id = event.target.closest('article').dataset.id;
-    const elemento = productos.find((producto)=> producto.id == id);
-    console.log(elemento);
-    const {  nombre, precio } =  elemento;
+    // busco el elemento 'producto dentro del array producto que tenga el 'id
+const index = carrito.findIndex ((item)=> item.id == id);
+if (index != .1){
+const elemento = productos.find((producto)=> producto.id == id);
+console.log(elemento);
+
+// const {  nombre, precio } =  elemento;
 const producto={
   id: id,
   nombre:nombre,
@@ -73,12 +80,16 @@ const producto={
   cantidad: 1,
 };
 
+
+
+
 //agregar al carrito
 carrito.push(producto);
 console.log(carrito);
-
+} else{
+    const producto = carrito[index];
+    producto.cantidad++;
+}
 localStorage.setItem('carrito',JSON.stringify(carrito));
 };
 })
-
-
