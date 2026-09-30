@@ -210,49 +210,65 @@ header {
 .navbar ul {
   margin: 0;
   padding: 0;
-
-  text-align: right;
+text-align: right;
 }
 
 .navbar ul li {
   display: inline-block;
+  position: relative;
 }
 
 .navbar ul li a {
   text-decoration: none;
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-right: 10px;
   color: rgba(0, 0, 0, 0.948);
   font-weight: bold;
   font-size: 20px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255,255,255,5);
+backdrop-filter: blur(8px);
 }
 
 .navbar ul li a:hover {
-  background-color: rgb(113, 14, 14);
+  /* background-color: rgb(113, 14, 14); */
+  background: rgba(255, 255, 255, 0.35);
+  
+  border: 2px solid rgb(0, 0, 0);
+transition: 0.3s;
   padding: 0 7px  ;
   border-radius: 3px;
   color: white;
 }
 
+
 .navbar ul li ul {
   display: none;
   position: absolute;
-  flex-direction: column;
-  margin: 0px;
-  padding: 2px;
+  width: 100%;
+  box-sizing: border-box;
   text-align: center;
   font-size: 19px;
   border-radius: 4px;
-}
+  min-width: 100%;
+  }
 
 .navbar ul li:hover ul {
   display: flex;
-  background-color: rgb(113, 14, 14);
+  background: rgba(255, 255, 255, 0.35);
+  transition: 0.3s;
   color: white;
   flex-direction: column;
   padding: 2px;
 }
+.navbar ul li ul li a {
+  display: block;
+  margin: 0;
+  padding: 8px 12px;
+  margin-bottom:10px;
+  }
 /* menu hamburguesa */
 .menu-toggle{
   display: none;

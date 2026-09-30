@@ -65,12 +65,13 @@ nav a {
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
-
-  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(255,255,255,5);
+  backdrop-filter: blur(8px);
 }
 
-nav a:hover {
-  background-color: brown;
+nav a:hover { background: rgba(255, 255, 255, 0.35);
+   border: 2px solid rgb(0, 0, 0);
   color: white;
 }
 

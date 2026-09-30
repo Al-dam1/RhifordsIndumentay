@@ -2,7 +2,7 @@ const productos = [
     {
         id: 1,
         nombre: "Remera básica",
-        descripcion: "Remera de algodón color negro",
+        description: "Remera de algodón color negro",
         imagen: "remera.jpg",
         precio: 15000,
         stock: 10
@@ -10,7 +10,7 @@ const productos = [
     {
         id: 2,
         nombre: "Pantalón cargo",
-        descripcion: "Pantalón cargo de gabardina",
+        description: "Pantalón cargo de gabardina",
         imagen: "pantalon.jpg",
         precio: 28000,
         stock: 5
@@ -18,7 +18,7 @@ const productos = [
     {
         id: 3,
         nombre: "Campera deportiva",
-        descripcion: "Campera liviana para entrenamiento",
+        description: "Campera liviana para entrenamiento",
         imagen: "campera.jpg",
         precio: 45000,
         stock: 8
@@ -26,7 +26,7 @@ const productos = [
     {
         id: 4,
         nombre: "Zapatillas urbanas",
-        descripcion: "Zapatillas cómodas para uso diario",
+        description: "Zapatillas cómodas para uso diario",
         imagen: "zapatillas.jpg",
         precio: 55000,
         stock: 3
@@ -34,7 +34,7 @@ const productos = [
     {
         id: 5,
         nombre: "Gorra negra",
-        descripcion: "Gorra ajustable de color negro",
+        description: "Gorra ajustable de color negro",
         imagen: "gorra.jpg",
         precio: 12000,
         stock: 15
@@ -62,13 +62,13 @@ productos.forEach((producto)=>{
 // escucho todos los eventos click el documento
 document.addEventListener('click',(event)=>{
     // si el elemento donde se hizo click contiene la clase 'agregar'
-   if (event.target.classList.contains('agregar')){
+   if (event.target.classList.contains('button-products')){
     // busco el contenedor mas cercano que se un 'article
     // obtengo el id del atributo data-id
     const id = event.target.closest('article').dataset.id;
     // busco el elemento 'producto dentro del array producto que tenga el 'id
 const index = carrito.findIndex ((item)=> item.id == id);
-if (index != .1){
+if (index != -1){
 const elemento = productos.find((producto)=> producto.id == id);
 console.log(elemento);
 
