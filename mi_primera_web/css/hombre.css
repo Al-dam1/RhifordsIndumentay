@@ -475,28 +475,30 @@ footer {
   .menu-togle{display: flex;
   justify-content: flex-end;}
   nav{
-    position: absolute;
-    top: 100%;
     left: 0;
     width: 100%;
     background-color: #008000;
     flex-direction: column;
     gap: 0;
-    display: none;
+   
   }
+  nav{display: flex;}
   nav li{border-top: 1px solid #000;}
   nav a{
     display: flex;
     padding: 1rem;
   }
   nav{position:relative;}
-  nav.active{display: flex;}
   .hero-categoria{
     width: 100%;
     height: auto;
-    margin-top: 65px;
+    margin-top: 0px;
   }
   .contenedor-central{display: flex;width: 100%;}
   .aside{width: 10%;}
   .hero-categoria{display: hidden;}
+  .sidebar{display: none;}
+  .top-bar{margin-bottom: 20px; display: flex; justify-content: flex-end; margin-right: 40px;}
+  .contenedor-columnas{width: 90%; align-items: center; margin: auto;}
+  .products{width: auto; height: 100%;}
 }
